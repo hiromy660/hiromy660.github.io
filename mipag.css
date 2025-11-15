@@ -1,0 +1,445 @@
+/* ========== RESETEO GENERAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ========== MODO OSCURO ========== */
+body.modo-oscuro {
+    background: #121212;
+    color: #e5e5e5;
+}
+
+body.modo-oscuro nav.menu-fijo {
+    background: #1d1d1d;
+}
+
+body.modo-oscuro footer {
+    background: #000;
+    color: #fff;
+}
+
+body.modo-oscuro .submenu {
+    background: #222;
+}
+
+body.modo-oscuro .formulario form {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* Botón modo oscuro */
+.modo-btn {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.modo-btn:hover {
+    background: #444;
+}
+
+/* ========== MENÚ FIJO ========== */
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    padding: 12px 0;
+    z-index: 999;
+}
+
+.menu-fijo ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-fijo a,
+.menu-fijo button {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Dropdown */
+.dropdown .submenu {
+    display: none;
+    position: absolute;
+    background: #333;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 5px 0;
+}
+
+.submenu a {
+    color: #fff;
+}
+
+/* ========== HERO ========== */
+.hero {
+    width: 100%;
+    height: 250px;
+    background: url('img/header.jpg') center/cover no-repeat;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 0px 8px black;
+}
+
+/* ========== SLIDER AUTOMÁTICO ========== */
+.slider-auto {
+    width: 80%;
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 80%;
+}
+
+/* ========== GALERÍA ========== */
+.galeria {
+    padding: 40px;
+    text-align: center;
+}
+
+.fila {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.columnas img {
+    width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.columnas img:hover {
+    transform: scale(1.05);
+}
+
+/* LIGHTBOX */
+.galeria-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+}
+
+.misImagenes {
+    display: none;
+}
+
+.botoncerrar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-size: 30px;
+}
+
+.anterior { left: 0; }
+.siguiente { right: 0; }
+
+/* ========== FORMULARIO ========== */
+.formulario {
+    padding: 40px;
+    text-align: center;
+}
+
+.formulario form {
+    width: 350px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.btn-enviar {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background: #0069d9;
+}
+
+/* ========== PIE DE PÁGINA ========== */
+.site-footer {
+    background: #222;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+/* ============================
+   RESET GENERAL
+================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================
+   MODO OSCURO
+================================*/
+body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+body.dark nav {
+    background: #1f1f1f;
+}
+
+body.dark .submenu {
+    background: #222;
+}
+
+body.dark footer {
+    background: #1f1f1f;
+    color: #ccc;
+}
+
+/* ============================
+   MENÚ FIJO CENTRADO
+================================*/
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1e88e5;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.menu-fijo ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-fijo ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    transition: 0.3s;
+}
+
+.menu-fijo ul li a:hover {
+    background: #1565c0;
+    border-radius: 4px;
+}
+
+/* ============================
+   MENÚ DESPLEGABLE
+================================*/
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 30px;
+    background: #2196f3;
+    padding: 10px 0;
+    display: none;
+    border-radius: 5px;
+}
+
+.submenu li {
+    padding: 5px 20px;
+}
+
+.submenu li a {
+    display: block;
+    color: white;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* ============================
+   CONTENIDO PRINCIPAL
+================================*/
+.contenido {
+    margin-top: 120px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ============================
+   GALERÍA AUTOMÁTICA (SLIDER)
+================================*/
+.slider {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+.slider img.active {
+    display: block;
+}
+
+/* ============================
+   LIGHTBOX
+================================*/
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+/* ============================
+   BOTÓN MODO OSCURO
+================================*/
+.boton-oscuro {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px 18px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+body.dark .boton-oscuro {
+    background: #888;
+    color: black;
+}
+
+/* ============================
+   FORMULARIO
+================================*/
+.formulario {
+    width: 50%;
+    margin: 50px auto;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* ============================
+   FOOTER
+================================*/
+footer {
+    margin-top: 50px;
+    background: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
